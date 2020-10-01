@@ -1,9 +1,15 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from "react";
+
+import Login from "./components/Login";
 
 function App() {
-  return <h1>Webchat</h1>;
+  const [id, setId] = useState();
+  return (
+    <>
+      {id}
+      <Login onIdSubmit={setId} />
+    </>
+  );
 }
 
 export default App;
