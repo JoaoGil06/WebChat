@@ -16,4 +16,6 @@ io.on("connection", (socket) => {
       });
     });
   });
+
+  console.log("Webchat iniciado na porta 5000!");
 });
