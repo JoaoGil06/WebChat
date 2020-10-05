@@ -1,5 +1,5 @@
 const io = require("socket.io")(5000);
-console.log("Webchat iniciado na porta 5000!");
+console.log("Webchat iniciado na porta 5000, hehe!");
 
 io.on("connection", (socket) => {
   const id = socket.handshake.query.id;
