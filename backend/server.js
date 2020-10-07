@@ -1,5 +1,5 @@
 const app = require("express");
-const https = require("https").createServer(app);
+const https = require("http").createServer(app);
 const io = require("socket.io")(https);
 
 io.on("connection", (socket) => {
