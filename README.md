@@ -7,7 +7,7 @@
 * [⚛ React JS](https://reactjs.org/)
 * [⚛ React Hooks](https://reactjs.org/docs/hooks-intro.html)
 * [💹 Node JS](https://nodejs.org/en/)
-* [⚡ Socket.io](https://nodejs.org/en/)
+* [⚡ Socket.io](https://socket.io/)
 * [💅Bootstrap](https://react-bootstrap.github.io/)
 
 # Getting Started
