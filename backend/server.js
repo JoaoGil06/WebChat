@@ -1,4 +1,4 @@
-const io = require("socket.io")(5000);
+const io = require("socket.io")("https://webchatnode.joaogil.dev:5000");
 
 io.on("connection", (socket) => {
   const id = socket.handshake.query.id;
