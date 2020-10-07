@@ -1,6 +1,4 @@
-const app = require("express");
-const https = require("http").createServer(app);
-const io = require("socket.io")(https);
+const io = require("socket.io")(5000);
 
 io.on("connection", (socket) => {
   const id = socket.handshake.query.id;
@@ -18,8 +16,4 @@ io.on("connection", (socket) => {
       });
     });
   });
-});
-
-app.listen(5000, () => {
-  console.log("Webchat Server started on port 5000!");
 });
