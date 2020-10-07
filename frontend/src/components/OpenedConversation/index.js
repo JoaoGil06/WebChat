@@ -43,6 +43,7 @@ const OpenedConversation = () => {
                   className={`rounded px-2 py-1 ${
                     message.fromMe ? "bg-primary text-white" : "border"
                   }`}
+                  style={{ color: "white" }}
                 >
                   {message.text}
                 </div>
@@ -66,7 +67,12 @@ const OpenedConversation = () => {
               required
               value={text}
               onChange={(e) => setText(e.target.value)}
-              style={{ height: "75px", resize: "none" }}
+              style={{
+                height: "75px",
+                resize: "none",
+                background: "#2b2b2b",
+                color: "white",
+              }}
             />
             <InputGroup.Append>
               <Button type="submit">Enviar</Button>

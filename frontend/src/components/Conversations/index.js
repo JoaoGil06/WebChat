@@ -14,6 +14,7 @@ const Conversations = () => {
           action
           onClick={() => selectConversationIndex(index)}
           active={conversation.selected}
+          variant="dark"
         >
           {conversation.recipients
             .map((recipient) => recipient.name)

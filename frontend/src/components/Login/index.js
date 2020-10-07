@@ -28,7 +28,7 @@ const Login = ({ onIdSubmit }) => {
         <Button type="submit" className="mr-2">
           Login
         </Button>
-        <Button onClick={createNewId} variant="secondary">
+        <Button onClick={createNewId} variant="light">
           Criar um novo ID
         </Button>
       </Form>

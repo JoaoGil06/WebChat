@@ -29,8 +29,13 @@ export default function NewConversationModal({ closeModal }) {
 
   return (
     <>
-      <Modal.Header closeButton>Create Conversation</Modal.Header>
-      <Modal.Body>
+      <Modal.Header
+        closeButton
+        style={{ background: "#2b2b2b", color: "white" }}
+      >
+        Criar nova conversa
+      </Modal.Header>
+      <Modal.Body style={{ background: "#2b2b2b", color: "white" }}>
         <Form onSubmit={handleSubmit}>
           {contacts.map((contact) => (
             <Form.Group controlId={contact.id} key={contact.id}>
@@ -42,7 +47,7 @@ export default function NewConversationModal({ closeModal }) {
               />
             </Form.Group>
           ))}
-          <Button type="submit">Create</Button>
+          <Button type="submit">Criar</Button>
         </Form>
       </Modal.Body>
     </>

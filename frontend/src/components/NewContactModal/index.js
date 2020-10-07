@@ -16,8 +16,13 @@ const NewContactModal = ({ closeModal }) => {
   }
   return (
     <>
-      <Modal.Header closeButton>Adicionar novo contacto</Modal.Header>
-      <Modal.Body>
+      <Modal.Header
+        closeButton
+        style={{ background: "#2b2b2b", color: "white" }}
+      >
+        Adicionar novo contacto
+      </Modal.Header>
+      <Modal.Body style={{ background: "#2b2b2b", color: "white" }}>
         <Form onSubmit={handleSubmit}>
           <Form.Group>
             <Form.Label>Id</Form.Label>

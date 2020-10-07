@@ -39,7 +39,10 @@ const Sidebar = ({ id }) => {
             <Contacts />
           </Tab.Pane>
         </Tab.Content>
-        <div className="p-2 border-top border-right small">
+        <div
+          className="p-2 border-top border-right small"
+          style={{ color: "white" }}
+        >
           O teu ID: <span className="text-muted">{id}</span>
         </div>
         <Button onClick={openModal} className="rounded-0">

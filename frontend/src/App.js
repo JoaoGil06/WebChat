@@ -11,7 +11,7 @@ import { SocketProvider } from "./contexts/SocketProvider";
 function App() {
   const [id, setId] = useLocalStorage("id");
   return (
-    <>
+    <div style={{ backgroundColor: "#2b2b2b" }}>
       {id ? (
         <SocketProvider id={id}>
           <ContactsProvider>
@@ -23,7 +23,7 @@ function App() {
       ) : (
         <Login onIdSubmit={setId} />
       )}
-    </>
+    </div>
   );
 }
 
